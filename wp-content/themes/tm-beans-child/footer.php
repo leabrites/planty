@@ -1,14 +1,33 @@
 <?php
-/**
- * This file's content is located in /lib/templates/structure/footer.php and should
- * only be overwritten via your child theme.
- *
- * We strongly recommend to read the Beans documentation to find out more about
- * how to customize the Beans theme.
- *
- * @author Beans
- * @link   https://www.getbeans.io
- * @package Beans\Framework
- */
+?>
+<style>
+    .footer{
+    width:100%;
+    height: 67px;
+    background-color:#fff;
+    position:fixed;
+    bottom:0%;
+    left:0%;
+    text-align:center;
+}
 
-beans_load_default_template( __FILE__ );
+    .mentions{ 
+    position: center;
+    font-family:'Syne';
+    color:black;
+    text-decoration: none;
+
+    }
+    </style>
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <footer class="footer">
+          <nav>
+            <div>
+                    <a class="mentions" href="<?php echo home_url('/Mentions légales'); ?>">Mentions légales</a>
+            </div> 
+          </nav>
+        </footer>
+    </body>
